@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@transition/card_exit</item>
+        <item name="android:windowReenterTransition">@android:transition/slide_top</item>
+
+    </style>
+
+        <!-- PopuP Enter Exit Animation -->
+        <style name="PopupAnimation" parent="Widget.AppCompat.PopupWindow">
+            <item name="android:windowEnterAnimation">@anim/bottom_up</item>
+            <item name="android:windowExitAnimation">@anim/bottom_down</item>
+        </style>
+
+    <style name="checkoutActivity" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

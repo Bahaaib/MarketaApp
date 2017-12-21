@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bahaa.marketa.CheckoutActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:drawableLeft="@drawable/cart_icon_white"
+            android:layout_marginLeft="4dp"
+            android:drawablePadding="4dp"
+            android:text="Shopping Cart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:id="@+id/updateRefresher">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/checkoutRV"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="56dp"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/subTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Subtotal:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/subPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="392dp"
+        android:fontFamily="sans-serif"
+        android:text="1000$"
+        android:textSize="20sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Discount:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/disPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="422dp"
+        android:fontFamily="sans-serif"
+        android:text=" - 100$"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/spaceBar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="450dp"
+        android:alpha="0.3"
+        android:background="@color/colorPrimaryLight" />
+
+    <TextView
+        android:id="@+id/grandTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Grand Total: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/grandTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="sans-serif"
+        android:text="150000$"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ripple_effect"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="ORDER NOW!"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

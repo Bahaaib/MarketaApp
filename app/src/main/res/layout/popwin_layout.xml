@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/half_rounded_edge"
+        android:elevation="6dp"
+        android:foregroundGravity="top">
+
+        <TextView
+            android:id="@+id/popupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="Purchasing Info"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/qtyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/quantity"
+        android:fontFamily="sans-serif-thin"
+        android:text="Quantity: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/rounded_edge"
+        android:inputType="number"
+        android:gravity="center"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/voucherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/qtyText"
+        android:layout_below="@+id/quantity"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Voucher Coupon: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/voucher"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/rounded_edge"
+        android:inputType="textCapWords"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/done_icon"
+        android:fontFamily="sans-serif-regular"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:text="PROCEED TO CHECKOUT"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+</RelativeLayout>

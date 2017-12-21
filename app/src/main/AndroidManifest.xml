@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bahaa.marketa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.bahaa.marketa.SplashScreen"
+            android:label="Marketa Gallery"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.bahaa.marketa.GameDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.bahaa.marketa.CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.bahaa.marketa.BookDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.bahaa.marketa.MovieDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.bahaa.marketa.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

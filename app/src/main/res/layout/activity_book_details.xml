@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_bkg"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bookdetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8"
+        android:elevation="4dp"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:id="@+id/bookRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/movieDetCoverImg"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/cod"
+                android:transitionName="selectedMovie"/>
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:background="#000000" />
+
+
+            <TextView
+                android:id="@+id/bookSumHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="188dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:text="Summary: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/bookSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="188dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:paddingRight="2dp"/>
+
+            <TextView
+                android:id="@+id/bookCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/cart_icon"
+                android:fontFamily="sans-serif-regular"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:text="ADD TO CART  "
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
