@@ -1,5 +1,5 @@
 MarketaApp</br>
-E-Market Entertainment App
+E-Market Entertainment App</br>
 Copyright 2017 Bahaa Ibrahim
 
 Licensed under the Apache License, Version 2.0 (the "License");
